@@ -1,8 +1,45 @@
-.table{
-  width: 80%;
+body {
+  background-color: hsl(197, 95%, 7%);
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.table {
+  width: 60%;
   margin: auto;
   margin-top: 10px;
 }
 
+.row {
+  width: 20%;
+  margin: auto;
+}
+label {
+  color: white;
+  font-weight: bold;
+}
 
+h3 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
 
+.transactions {
+  text-decoration: underline;
+}
+
+.table-search input {
+ margin-left: 20%;
+ margin-top: 35px;
+}
+
+.transaction-form{
+  background-color: hsl(9, 56%, 34%);
+  width: 60%;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
