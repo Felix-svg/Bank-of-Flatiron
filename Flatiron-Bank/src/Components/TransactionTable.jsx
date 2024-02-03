@@ -8,7 +8,7 @@ function TransactionTable() {
     .then((data) => setTransactions(data));
 
   return (
-    <table>
+    <table className="table table-dark table-stripped-columns">
       <thead>
         <tr>
           <th>Date</th>
