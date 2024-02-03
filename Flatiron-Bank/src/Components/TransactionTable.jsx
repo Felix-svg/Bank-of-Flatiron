@@ -1,5 +1,13 @@
+import { useState } from "react";
+
 function TransactionTable() {
-  return(
+  const [transactions, setTransactions] = useState([]);
+
+  fetch("http://localhost:3000/transactions")
+    .then((res) => res.json())
+    .then((data) => setTransactions(data));
+
+  return (
     <table>
       <thead>
         <tr>
@@ -10,10 +18,17 @@ function TransactionTable() {
         </tr>
       </thead>
       <tbody>
-        <tr></tr>
+        {transactions.map((transaction) => (
+          <tr key={transaction.id}>
+            <td>{transaction.date}</td>
+            <td>{transaction.description}</td>
+            <td>{transaction.category}</td>
+            <td>{transaction.amount}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
-  )
+  );
 }
 
-export default TransactionTable
+export default TransactionTable;
