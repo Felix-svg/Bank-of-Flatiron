@@ -7,9 +7,11 @@ function TransactionTable({ transactions }) {
     transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  // Sort the transactions alphabetically by category
+  transactions.sort((a, b) => a.category.localeCompare(b.category));
+
   return (
     <div className="table-search">
-    
       <h3 className="transactions">Transactions</h3>
       <table className="table table-dark table-stripped-columns">
         <thead>
@@ -21,8 +23,8 @@ function TransactionTable({ transactions }) {
           </tr>
         </thead>
         <tbody>
-          {filteredTransactions.map((transaction, index) => (
-            <tr key={index}>
+          {filteredTransactions.map((transaction) => (
+            <tr key={transaction.id}>
               <td>{transaction.date}</td>
               <td>{transaction.description}</td>
               <td>{transaction.category}</td>

@@ -19,7 +19,6 @@ function App() {
   return (
     <div>
       <TransactionTable transactions={transactions} />
-      <hr></hr>
       <TransactionForm  addTransaction={addTransaction} />
     </div>
   );
