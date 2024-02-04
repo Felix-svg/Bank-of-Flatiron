@@ -11,6 +11,7 @@ function App() {
   }, []);
 
   const [transactions, setTransactions] = useState([]);
+  console.log(transactions)
 
   const addTransaction = (newTransaction) => {
     setTransactions([...transactions, newTransaction]);

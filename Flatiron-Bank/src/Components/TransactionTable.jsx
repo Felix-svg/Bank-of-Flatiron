@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 function TransactionTable({ transactions }) {
+  // State to manage search term
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredTransactions = transactions.filter((transaction) =>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function TransactionForm({ addTransaction }) {
-  //state to manage transactions and search term
+  // State to manage transactions
   const [date, setDate] = useState("");
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");

@@ -9,8 +9,8 @@
 ## Project Setup & Pre-requisite Data
 <ul>
 <li>In your project directory, create a db.json file and use this <a href="https://docs.google.com/document/d/1EWN0qLfAWfgzO1N2P8H5WmrsTx0nMkhp3s-rXVESTNA/edit">data</a> for your server DB.</li>
-<li>Run this command to get the backend started: <small>json-server --watch db.json</small></li>
-<li>Test your server by visiting this route in the browser: <small>http://localhost:8001/transactions</small<</li>
+<li>Run this command to get the backend started: <small>npx json-server db.json</small></li>
+<li>Test your server by visiting this route in the browser: <small>http://localhost:3000/transactions</small<</li>
 </ul>
 
 ## Project Guidelines & Deliverables 
